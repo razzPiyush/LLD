@@ -1,4 +1,4 @@
-package LLD.Creational.Factory;
+package Creational.Factory;
 
 // Usage
 public class Main {

@@ -1,4 +1,4 @@
-package LLD.Creational.Factory;
+package Creational.Factory;
 // Factory class
 class ShapeFactory {
     public Shape getShape(String shapeType) {

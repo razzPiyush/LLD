@@ -1,4 +1,4 @@
-package LLD.Creational.Factory;
+package Creational.Factory;
 
 // Concrete implementations
 class Circle implements Shape {

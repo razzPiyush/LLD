@@ -1,4 +1,4 @@
-package LLD.Creational.Factory;
+package Creational.Factory;
 
 class Rectangle implements Shape {
     public void draw() {

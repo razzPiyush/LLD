@@ -1,4 +1,4 @@
-package LLD.Creational.Builder;
+package Creational.Builder;
 
 // Usage
 public class Main {

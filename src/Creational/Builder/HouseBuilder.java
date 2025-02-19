@@ -1,4 +1,4 @@
-package LLD.Creational.Builder;
+package Creational.Builder;
 
 // Builder interface
 interface HouseBuilder {
