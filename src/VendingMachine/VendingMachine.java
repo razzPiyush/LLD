@@ -4,7 +4,7 @@ import VendingMachine.State.*;
 
 public class VendingMachine {
 
-    private final VendingMachineState currentState;
+    private VendingMachineState currentState;
     private final VendingMachineState idleState;
     private final VendingMachineState readyState;
     private final VendingMachineState returnChangeState;
@@ -34,8 +34,10 @@ public class VendingMachine {
     }
 
     public void setSelectedProduct(Product product){
-        currentState.selectedProduct = product;
+        selectedProduct = product;
+        currentState.selectItems(product);
     }
+
     public Product getProduct(){
         return selectedProduct;
     }
@@ -90,7 +92,7 @@ public class VendingMachine {
     public void resetPayment(){
         totalPayment = 0;
     }
-    public vois resetProduct(){
+    public void resetProduct(){
         selectedProduct = null;
     }
 

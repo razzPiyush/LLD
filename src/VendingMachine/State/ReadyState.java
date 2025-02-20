@@ -17,18 +17,15 @@ public class ReadyState implements VendingMachineState {
         System.out.println("Insert the coin or money");
     };
     public void insertCoins(Coin coin){
-        vendingMachine.insertCoin(coin);
         vendingMachine.addCoin(coin);
-        // vedingMachine me coin add karre hai
-        vendingMachine.setState(vendingMachine.getReturnChangeState());
         // Issi veding machine ka dusra state lekar apan issi vending machine me set karre hai
         System.out.println("Successfully, inserted coin of " + coin.getValue());
+        checkPaymentStatus();
     };
     public void insertNotes(Note note){
-        vendingMachine.insertNote(note);
         vendingMachine.addNote(note);
-        vendingMachine.setState(vendingMachine.getReturnChangeState());
-        System.out.println("Successfully, inserted coin of " + note.getValue());
+        System.out.println("Successfully, inserted note of " + note.getValue());
+        checkPaymentStatus();
     };
     public void returnChange(){
         System.out.println("Insert the coin or money");
@@ -36,4 +33,18 @@ public class ReadyState implements VendingMachineState {
     public void dispenseItem(){
         System.out.println("Insert the coin or money");
     };
+
+    public void checkPaymentStatus(){
+        int currentMoney = vendingMachine.getTotalPayment();
+        int productPrice = vendingMachine.getProduct().getPrice();
+        if(currentMoney >= productPrice){
+            vendingMachine.setState(vendingMachine.getDispenseState());
+        }
+        else{
+            vendingMachine.resetPayment();
+            vendingMachine.resetProduct();
+            vendingMachine.setState((vendingMachine.getIdleState()));
+            System.out.println("Sorry, product can't be dispatched due to insufficient money");
+        }
+    }
 }

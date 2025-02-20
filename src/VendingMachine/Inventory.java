@@ -8,9 +8,11 @@ import java.util.HashMap;
 
 public class Inventory {
     HashMap<Product, Integer> productamountHashMap;
+
     public Inventory(){
         productamountHashMap = new HashMap<>();
     }
+
     public void addProducts(Product product){
         productamountHashMap.put(product, productamountHashMap.getOrDefault(product, 0)+1);
     }
@@ -19,8 +21,8 @@ public class Inventory {
         productamountHashMap.put(product, productamountHashMap.getOrDefault(product, 0)-1);
     }
 
-    public Integer getQuantity(Product product){
-        return productamountHashMap.get(product);
+    public int getQuantity(Product product){
+        return productamountHashMap.getOrDefault(product, 0);
     }
 
     public boolean availableProduct(Product product){

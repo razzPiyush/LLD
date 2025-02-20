@@ -1,6 +1,5 @@
 package VendingMachine.State;
 
-import Behavioral.State.State;
 import VendingMachine.Coin;
 import VendingMachine.Note;
 import VendingMachine.Product;
@@ -15,11 +14,11 @@ public class IdleState implements VendingMachineState {
 
     public void selectItems(Product product){
         if(vendingMachine.inventory.availableProduct(product)){
-            vendingMachine.setSelectedProduct(product);
-            vendingMachine.setState(vendingMachineState.getReadyState());
+            //vendingMachine.setSelectedProduct(product);
+            vendingMachine.setState(vendingMachine.getReadyState());
             // vending machine me hame sare states bana rakhe hai aur initialize kar rakhe hai
             // ab hum vending machine se ready state utha ka usko set kardenge vending machine me
-            System.out.println("Successfully, added the product" + product.getName());
+            System.out.println("Successfully, added the product " + product.getName());
         }
         else{
             System.out.println("Sorry, this product is out of stock");

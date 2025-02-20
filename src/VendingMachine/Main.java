@@ -5,26 +5,52 @@ The VendingMachineDemo class demonstrates the usage of the vending machine by ad
 selecting products, inserting coins and notes, dispensing products, and returning change.
  */
 public class Main {
-    VendingMachine vendingMachine = VendingMachine.getInstance();
+    public static void main(String[] args) {
+        VendingMachine vendingMachine = VendingMachine.getInstance();
 
-    // add the products to inventory
-    Product product1 = new Product("bakardi", 200);
-    Product product2 = new Product("balentine", 300);
-    Product product3 = new Product("teachers", 100);
-    vendingMachine.inventory.addProducts(product1);
-    vendingMachine.inventory.addProducts(product1);
-    vendingMachine.inventory.addProducts(product2);
-    vendingMachine.inventory.addProducts(product2);
-    vendingMachine.inventory.addProducts(product3);
+        // add the products to inventory
+        Product product1 = new Product("bakardi", 200);
+        Product product2 = new Product("balentine", 300);
+        Product product3 = new Product("teachers", 100);
 
-    // select the products
+        vendingMachine.inventory.addProducts(product1);
+        vendingMachine.inventory.addProducts(product1);
+        vendingMachine.inventory.addProducts(product2);
+        vendingMachine.inventory.addProducts(product2);
+        vendingMachine.inventory.addProducts(product3);
 
-    // insert the coins or notes
+        // select the products
+        vendingMachine.setSelectedProduct(product3);
 
-    // dispense products
+        // insert the coins or notes
+        // vendingMachine.insertNote(Note.FIVEHUNDRED);
+        vendingMachine.insertCoin(Coin.HUNDREDRUPEE);
+        vendingMachine.insertNote(Note.TEN);
+        vendingMachine.insertCoin(Coin.TWENTYRUPPE);
 
-    // return change
+        // dispense the item
+        vendingMachine.dispenseItem();
 
+        // return change
+        vendingMachine.returnChange();
+
+        vendingMachine.inventory.removeProduct(product2);
+        System.out.println("Product Quantity of " + product2.getName() + " is  "+
+                vendingMachine.inventory.getQuantity(product2));
+        vendingMachine.setSelectedProduct(product2);
+
+        // insert the coins or notes
+        vendingMachine.insertNote(Note.FIVEHUNDRED);
+        vendingMachine.insertCoin(Coin.FIFTYRUPEE);
+        vendingMachine.insertNote(Note.TEN);
+        vendingMachine.insertCoin(Coin.TWENTYRUPPE);
+
+        // dispense the item
+        vendingMachine.dispenseItem();
+
+        // return change
+        vendingMachine.returnChange();
+    }
 }
 
 /*
