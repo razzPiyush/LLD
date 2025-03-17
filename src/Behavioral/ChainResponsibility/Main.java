@@ -16,11 +16,14 @@ public class Main {
 
 /*
 Definition:
--The State Design Pattern is a behavioral pattern that allows an object to alter its behavior when its internal state changes. The object appears to change its class dynamically by delegating behavior to a corresponding state object.
+The Chain of Responsibility (CoR) is a behavioral design pattern that allows a request to pass through a chain of
+handlers. Each handler in the chain either processes the request or passes it to the next handler, without the sender
+knowing which handler will process it.
 
 When to Use:
--When an object needs to change its behavior based on its current state, and these state changes are frequent.
--To replace complex if-else or switch statements for handling different states.
--When you want to encapsulate different states in separate classes for better maintainability.
+-When a request may be processed by one or more handlers.
+-To decouple the sender of a request from its potential receivers.
+-When the chain of handlers can change dynamically or at runtime.
+-To avoid multiple if-else or switch statements for handling requests.
 
  */
