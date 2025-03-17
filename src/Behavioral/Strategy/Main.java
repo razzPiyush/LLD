@@ -1,4 +1,4 @@
-package LLD.Behavioral.Strategy;
+package Behavioral.Strategy;
 
 // Usage
 public class Main {
@@ -14,3 +14,14 @@ public class Main {
         cart.checkout(200);
     }
 }
+/*
+Definition:
+-The Strategy Design Pattern is a behavioral pattern that defines a family of algorithms, encapsulates each one in a
+separate class, and makes them interchangeable. This pattern allows a client to choose a behavior (or algorithm)
+at runtime without modifying the context in which it operates.
+
+When to Use:
+-When you have different ways to accomplish a task, and the choice of algorithm should be made dynamically at runtime.
+-When you want to eliminate complex if-else or switch statements for algorithm selection.
+-When you want to encapsulate algorithm logic in a modular way for easy maintenance and scalability.
+ */

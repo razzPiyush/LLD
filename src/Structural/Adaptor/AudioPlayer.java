@@ -1,4 +1,4 @@
-package LLD.Structural.Adaptor;
+package Structural.Adaptor;
 
 // Adaptee class (existing class with incompatible interface)
 class AudioPlayer {

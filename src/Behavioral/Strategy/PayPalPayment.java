@@ -1,4 +1,4 @@
-package LLD.Behavioral.Strategy;
+package Behavioral.Strategy;
 
 class PayPalPayment implements PaymentStrategy {
     private String email;

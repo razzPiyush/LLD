@@ -1,4 +1,4 @@
-package LLD.Structural.Decorator;
+package Structural.Decorator;
 
 // Concrete Component
 class SimpleCoffee implements Coffee {

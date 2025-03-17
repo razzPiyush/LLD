@@ -1,4 +1,4 @@
-package LLD.Structural.Decorator;
+package Structural.Decorator;
 
 // Concrete Decorators
 class MilkDecorator extends CoffeeDecorator {

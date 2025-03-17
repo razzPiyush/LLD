@@ -1,5 +1,7 @@
-package LLD.Behavioral.Observer;
-import java.util.*;
+package Behavioral.Observer;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // Concrete Subject
 class NewsAgency implements Subject {

@@ -1,4 +1,4 @@
-package LLD.Structural.Decorator;
+package Structural.Decorator;
 
 // Component interface
 interface Coffee {

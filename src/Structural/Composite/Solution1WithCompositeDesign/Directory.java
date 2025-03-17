@@ -19,7 +19,7 @@ public class Directory implements FileSystem {
 
     public void ls(){
         System.out.println("Directory name " + directoryName);
-
+        System.out.println("-----------");
         for(FileSystem fileSystemObj : fileSystemList){
             fileSystemObj.ls();
         }

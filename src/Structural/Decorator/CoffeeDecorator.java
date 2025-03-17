@@ -1,4 +1,5 @@
-package LLD.Structural.Decorator;
+package Structural.Decorator;
+
 // Decorator abstract class
 abstract class CoffeeDecorator implements Coffee {
     protected Coffee decoratedCoffee;

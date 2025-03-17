@@ -25,3 +25,16 @@ public class Main {
         threeDSquare.draw(); // Output: Drawing a Cube (3D).
     }
 }
+/*
+Definition:
+The Abstract Factory design pattern is a creational pattern that provides an interface to create families of related or
+dependent objects without specifying their concrete classes. It encapsulates a group of individual factories with a
+common theme.
+
+When to Use:
+-When you need to create families of related objects that must be used together.
+-When the system needs to be independent of how its products are created, composed, and represented.
+-When you want to enforce consistency among related objects.
+-When the product families are expected to grow, and you want to ensure that adding new product families doesn’t affect
+existing code.
+ */

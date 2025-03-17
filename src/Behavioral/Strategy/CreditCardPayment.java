@@ -1,4 +1,4 @@
-package LLD.Behavioral.Strategy;
+package Behavioral.Strategy;
 
 // Concrete strategies
 class CreditCardPayment implements PaymentStrategy {

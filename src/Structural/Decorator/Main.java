@@ -1,4 +1,4 @@
-package LLD.Structural.Decorator;
+package Structural.Decorator;
 
 // Usage
 public class Main {
@@ -20,3 +20,14 @@ public class Main {
         // we can extend it to any possible permutation combinations
     }
 }
+/*
+Definition:
+The Decorator design pattern is a structural pattern that allows behavior to be added to an individual object, either
+statically or dynamically, without affecting the behavior of other objects from the same class. This is done by
+wrapping the object in a decorator class that provides additional functionality.
+
+When to Use:
+-When you want to add responsibilities to objects without modifying their code or subclassing.
+-When you need different combinations of behaviors that can be applied to objects dynamically.
+-When extending functionality via inheritance would lead to an explosion of subclasses.
+ */

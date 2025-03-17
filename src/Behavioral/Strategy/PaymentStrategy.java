@@ -1,4 +1,4 @@
-package LLD.Behavioral.Strategy;
+package Behavioral.Strategy;
 
 // Strategy interface
 interface PaymentStrategy {

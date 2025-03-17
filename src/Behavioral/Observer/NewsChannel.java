@@ -1,4 +1,5 @@
-package LLD.Behavioral.Observer;
+package Behavioral.Observer;
+
 
 // Concrete Observer
 class NewsChannel implements Observer {

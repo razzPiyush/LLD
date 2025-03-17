@@ -1,4 +1,4 @@
-package LLD.Behavioral.Observer;
+package Behavioral.Observer;
 
 // Subject interface
 interface Subject {

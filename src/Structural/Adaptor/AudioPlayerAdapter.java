@@ -1,4 +1,4 @@
-package LLD.Structural.Adaptor;
+package Structural.Adaptor;
 
 // Adapter class (adapting the AudioPlayer to the MediaPlayer interface)
 class AudioPlayerAdapter implements MediaPlayer {
