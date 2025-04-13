@@ -20,5 +20,4 @@ When to Use:
 -When the actual object is resource-intensive to create or initialize, and you want to create it on-demand
 (lazy initialization).
 -When you want to add functionality to an object transparently, without modifying its code.
-
  */

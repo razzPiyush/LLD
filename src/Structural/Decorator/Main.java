@@ -15,7 +15,7 @@ public class Main {
         Coffee milkSugarCoffee = new SugarDecorator(milkCoffee);
         System.out.println("Cost of Coffee with Milk and Sugar: " + milkSugarCoffee.cost());
 
-        // here we can make any combination according to our reuirement
+        // here we can make any combination according to our requirement
         // it can be a simple coffee, coffee with Milk, coffee with Sugar, coffee with Sugar+Milk
         // we can extend it to any possible permutation combinations
     }

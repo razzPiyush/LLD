@@ -2,7 +2,7 @@ package Structural.Proxy;
 
 public class DatabaseProxy implements Database {
     private RealDatabase realDatabase;
-    private boolean isAdmin;
+    private final boolean isAdmin;
 
     public DatabaseProxy(String userRole) {
         this.isAdmin = "ADMIN".equalsIgnoreCase(userRole);

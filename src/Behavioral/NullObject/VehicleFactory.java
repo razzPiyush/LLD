@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class VehicleFactory {
-    private static Map<String, Vehicle> vehicles = new HashMap<>();
+    private static final Map<String, Vehicle> vehicles = new HashMap<>();
 
     static {
         vehicles.put("SUV", new Car("Toyota", "Highlander"));

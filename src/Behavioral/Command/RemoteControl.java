@@ -27,7 +27,7 @@ public class RemoteControl {
         turnOffFan = new TurnOffFanCommand(ceilingFan);
     }
 
-    private Stack<Command> history = new Stack<>();
+    private final Stack<Command> history = new Stack<>();
 
     public void executeCommand(Command command) {
         command.execute();

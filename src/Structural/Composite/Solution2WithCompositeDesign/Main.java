@@ -2,7 +2,7 @@ package Structural.Composite.Solution2WithCompositeDesign;
 
 public class Main {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         //2*(1+7)
 

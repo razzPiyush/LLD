@@ -25,5 +25,4 @@ When to Use:
 -To decouple the sender of a request from its potential receivers.
 -When the chain of handlers can change dynamically or at runtime.
 -To avoid multiple if-else or switch statements for handling requests.
-
  */

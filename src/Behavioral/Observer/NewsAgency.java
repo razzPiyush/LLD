@@ -5,7 +5,7 @@ import java.util.List;
 
 // Concrete Subject
 class NewsAgency implements Subject {
-    private List<Observer> observers = new ArrayList<>();
+    private final List<Observer> observers = new ArrayList<>();
     private String news;
 
     public void setNews(String news) {

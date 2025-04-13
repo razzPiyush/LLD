@@ -15,7 +15,8 @@ public class Main {
 Facade Design Pattern
 Definition:
 The Facade design pattern is a structural pattern that provides a simplified interface to a larger body of code,
-such as a complex subsystem. It hides the complexities of the subsystem and provides a unified interface for the client.
+such as a complex subsystem. It hides the complexities of the subsystem and provides a unified interface for the
+client.
 
 When to Use:
 -When you want to provide a simple interface to a complex subsystem.

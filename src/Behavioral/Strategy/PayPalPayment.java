@@ -1,7 +1,7 @@
 package Behavioral.Strategy;
 
 class PayPalPayment implements PaymentStrategy {
-    private String email;
+    private final String email;
 
     public PayPalPayment(String email) {
         this.email = email;
