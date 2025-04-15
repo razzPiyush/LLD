@@ -4,10 +4,10 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class Game {
-    private Board board;
-    private Deque<Player> playerList;
-    private Dice dice;
-    private int cellSize;
+    public Board board;
+    private final Deque<Player> playerList;
+    private final Dice dice;
+    private final int cellSize;
 
     public Game(int cellSize){
         this.cellSize = cellSize;

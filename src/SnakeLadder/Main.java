@@ -4,10 +4,10 @@ public class Main {
     public static void main(String[] args)
     {
         Game game = new Game(16);
-        Jump jump1 = new Jump(game.getBoard().getCell(1), game.getBoard().getCell(4));
-        Jump jump2 = new Jump(game.getBoard().getCell(14), game.getBoard().getCell(3));
-        Jump jump3 = new Jump(game.getBoard().getCell(10), game.getBoard().getCell(14));
-        Jump jump4 = new Jump(game.getBoard().getCell(12), game.getBoard().getCell(5));
+        Jump jump1 = new Jump(game.board.getCell(1), game.getBoard().getCell(4));
+        Jump jump2 = new Jump(game.board.getCell(14), game.getBoard().getCell(3));
+        Jump jump3 = new Jump(game.board.getCell(10), game.getBoard().getCell(14));
+        Jump jump4 = new Jump(game.board.getCell(12), game.getBoard().getCell(5));
         // [1 -> 4]
         // [10 -> 14]
         // [14 -> 3]

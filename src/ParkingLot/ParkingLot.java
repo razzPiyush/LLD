@@ -1,15 +1,19 @@
 package ParkingLot;
 
-import java.util.*;
 import ParkingLot.ParkingSlot.ParkingSlot;
 import ParkingLot.vechicle.Vehicle;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class ParkingLot {
     List<ParkingSlot> slots;
     int capacity;
     Map<Vehicle, ParkingSlot> vechileVsPakringSlot;
 
-    // Applied Singelton pattern so that only one instnace of ParkingLot is created
+    // Applied Singleton pattern so that only one instnace of ParkingLot is created
     private static ParkingLot instance;
 
     private ParkingLot(int capacity) {

@@ -7,7 +7,7 @@ public enum Note {
     FIVEHUNDRED(500);
 
     public final int value;
-    private Note(int value){
+    Note(int value){
         this.value = value;
     }
 
